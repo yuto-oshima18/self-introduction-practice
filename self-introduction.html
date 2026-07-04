@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介 - YutoOshima</title>
+</head>
+<body>
+    <h1>自己紹介</h1>
+    <h2>プロフィール</h2>
+    <p>名前:YutoOshima</p>
+    <p>年齢:20代</p>
+    <p>出身地:日本</p>
+    <p>趣味:ネットサーフィン</p>
+    <h2>好きなもの</h2>
+    <ul>
+        <li>グレープフルーツ</li>
+        <li>ブドウ</li>
+        <li>パイナップル</li>
+    </ul>
+    <h2>今年の目標</h2>
+    <ol>
+        <li>プログラミング勉強</li>
+        <li>自炊</li>
+        <li>熟睡</li>
+    </ol>
+    <h2>リンク</h2>
+    <a href="" target="_blank">私のGitHub</a>
+    <h2>好きな風景</h2>
+    <img src="" alt="好きな風景" width="400px">
+    <h2>お問合せ</h2>
+    <form action="/submit" method="post">
+        <div>
+            <label for="username">お名前：</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="dropdown">お問合せ種別：</label>
+            <select id="dropdown" name="QAtype">
+                <option value="none">-- 選択してください --</option>
+                <option value="inquiry">一般的なお問合せ</option>
+                <option value="opinion">ご意見・ご要望</option>
+            </select>
+        </div>
+        <div>
+            <label for="details">お問合せ内容：</label>
+            <textarea id="details" name="detail" raw="5" cols="40" required></textarea>
+        </div>
+        <div>
+            <button type="submit">送信する</button>
+        </div>
+    </form>
+</body>
+</html>
